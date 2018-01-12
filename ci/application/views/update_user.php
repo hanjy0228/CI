@@ -7,10 +7,12 @@
  */
 ?>
 <head>
-    <base href="<?php echo site_url(); ?>">
+    <meta charset="utf-8">
+    <base href="<?php echo site_url()?>">
 </head>
-<meta charset="utf-8">
+<body>
 <form action="user/update/<?php echo $user->id ?>" method="post">
     name:<input type="text" name="username" value="<?php echo $user->name?>">
-    <input type="submit" name="sub" > 
+    <input type="submit" name="sub" >
 </form>
+</body>
